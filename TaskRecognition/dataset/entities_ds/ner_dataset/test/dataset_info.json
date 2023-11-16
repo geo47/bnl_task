@@ -1,0 +1,52 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "json",
+  "dataset_size": 10588,
+  "description": "",
+  "download_checksums": {
+    "/data/Muzamil/projects/my_project/bnl_task/TaskRecognition/dataset/entities_ds/entities_dataset.jsonl": {
+      "num_bytes": 11788,
+      "checksum": null
+    }
+  },
+  "download_size": 11788,
+  "features": {
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "spans": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 22376,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 10588,
+      "num_examples": 50,
+      "dataset_name": "json"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
