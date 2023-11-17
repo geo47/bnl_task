@@ -12,7 +12,7 @@ from TaskRecognition.model.model import T5FineTuner
 class ExtractNER:
 
     def __init__(self):
-        model_path = "models/feature-ext.ckpt"
+        model_path = "../models/feature-ext.ckpt"
 
         args_dict = dict(
             model_name_or_path='t5-small',
