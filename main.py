@@ -13,7 +13,7 @@ from transformers import AutoTokenizer
 from TaskRecognition.rec_model import ExtractNER
 from task1_main import task1_bot
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "HUGGINGFACEHUB_API_TOKEN"
 
 
 if __name__ == '__main__':
