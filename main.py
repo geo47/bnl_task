@@ -19,11 +19,6 @@ os.environ["HUGGINGFACEHUB_API_TOKEN"] = "HUGGINGFACEHUB_API_TOKEN"
 if __name__ == '__main__':
     ex_feature = ExtractNER()
 
-    # task_dataset = pd.read_csv("TaskRecognition/dataset/raw_files/task_dataset.csv", header=0)
-
-    # for idx, row in task_dataset.iterrows():
-    #     ex_feature.predict_ner(row[0])
-
     # query = "If q is 1, and the wavelength lambda λ is 1, what is the scattering angle θ in degree? What is the d spacing?"
     # query = "If a material exhibits a spacing between crystal lattice planes d of 6, what does this correspond to in terms of the reciprocal/Fourier space scattering vector q?"
     query = "We want to look at this perovskite to understand its structure. We think 5 seconds of exposure should be sufficient. Theta of 0.2 would be good."

@@ -5,9 +5,9 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 from transformers import AutoTokenizer
 
-from TaskRecognition.model.entity_dataset import EntityDataset
-from TaskRecognition.model.model import T5FineTuner
-from TaskRecognition.model.util import set_seed
+from entity_dataset import EntityDataset
+from model import T5FineTuner
+from util import set_seed
 
 
 class EvaluationNER:
@@ -164,7 +164,7 @@ class EvaluationNER:
 
 if __name__ == "__main__":
     set_seed(42)
-    model_path = "../models/feature-ext.ckpt"
+    model_path = "../../models/feature-ext.ckpt"
     dataset = load_from_disk("../dataset/entities_ds/ner_dataset")
 
     args_dict = dict(

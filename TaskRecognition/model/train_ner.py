@@ -1,4 +1,5 @@
 import argparse
+import os
 
 import nltk
 from datasets import load_from_disk
@@ -17,12 +18,13 @@ from transformers import (
     AutoTokenizer
 )
 
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 set_seed(42)
 dataset = load_from_disk("../dataset/entities_ds/ner_dataset")
 
 args_dict = dict(
-    data_dir="../dataset/entities_ds/ner_dataset",
+    # data_dir="../dataset/entities_ds/ner_dataset",
     output_dir="../../models/",
     model_name_or_path='t5-small',
     tokenizer_name_or_path='t5-small',

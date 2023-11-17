@@ -22,7 +22,7 @@ class T5FineTuner(pl.LightningModule):
         self.tokenizer = AutoTokenizer.from_pretrained(
             hparam.model_name_or_path
         )
-        self.save_hyperparameters()
+        self.save_hyperparameters(ignore=["data_dir", "output_dir"])
 
     def is_logger(self):
         return True

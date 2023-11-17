@@ -12,7 +12,7 @@ from TaskRecognition.model.model import T5FineTuner
 class ExtractNER:
 
     def __init__(self):
-        model_path = "../models/feature-ext.ckpt"
+        model_path = "models/feature-ext.ckpt"
 
         args_dict = dict(
             model_name_or_path='t5-small',
@@ -36,7 +36,7 @@ class ExtractNER:
         predictions = [pred.strip() for pred in predictions[0].split(';') if ':' in pred]
         predictions = [pred.strip() for pred in predictions if pred.split(':')[0].strip() and pred.split(':')[1].strip()]
         predictions = set(predictions)
-        print(predictions)
+        # print(predictions)
 
         feature = []
         if predictions:
@@ -49,4 +49,5 @@ class ExtractNER:
 
 if __name__ == "__main__":
     ner = ExtractNER()
-    ner.predict_ner("We want to look at this perovskite to understand its structure. We think 5 seconds of exposure should be sufficient. Theta of 0.2 would be good.")
+    res = ner.predict_ner("We want to look at this perovskite to understand its structure. We think 5 seconds of exposure should be sufficient. Theta of 0.2 would be good.")
+    # print(res)
