@@ -7,7 +7,7 @@ from torch import cuda, bfloat16
 from transformers import AutoTokenizer
 import transformers
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "HUGGINGFACEHUB_API_TOKEN"
 
 model_name = 'meta-llama/Llama-2-7b-chat-hf'
 
