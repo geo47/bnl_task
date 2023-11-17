@@ -20,7 +20,7 @@ from langchain.prompts import PromptTemplate
 from weather_tool import Weather
 from datetime_tool import Datetime
 
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = 'OPENAI_API_KEY'
 
 llm = OpenAI(temperature=0)
 
