@@ -10,7 +10,7 @@ from langchain.prompts.chat import (
 )
 from transformers import AutoConfig, AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "HUGGINGFACEHUB_API_TOKEN"
 
 
 def get_response_from_query(query):
